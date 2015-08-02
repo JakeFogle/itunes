@@ -1,22 +1,23 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html ng-app="itunes">
+
   <head>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/ng-grid/2.0.11/ng-grid.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body ng-controller="mainCtrl">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div id="myContainer">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music"></span> DevTunes</a>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-music"></span> Jake's Tunes</a>
           </div>
           <form class="navbar-form navbar-left" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name" >
-              <button class="btn btn-primary" ng-click="getSongData()"> Submit </button>
+              <input type="text" class="form-control" ng-model="artist" placeholder="Artist Name..." >
             </div>
           </form>
         </div>
@@ -33,4 +34,5 @@
     <script src="js/mainCtrl.js"></script>
     <script src="js/itunesService.js"></script>
   </body>
+
 </html>
